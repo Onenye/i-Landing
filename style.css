@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* color: #ffffff; */
+    background: linear-gradient(150deg, #f3f9ff 50%, #f8fafc 50%);
+    height: 100vh;
+    width: 100%;
+    font-family: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+
+header{
+     background-color: rgba(255, 255, 255, 0); 
+    padding-top: 10px;
+}
+
+
+header .container{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+     padding-right: 20px;
+    padding-left: 20px;
+    max-width: 1140px;
+    margin-left: 50px;
+    margin-right: 10px;
+     padding: 3px 5px 3px 15px;  
+}
+
+ header .logo{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1;
+    padding-left: 5px;
+    color: #2d465e; 
+    font-family: "Nunito",  sans-serif;
+} 
+
+header .logo img {
+    max-height: 36px;
+    margin-right: 8px;
+  }
+
+a{
+    text-decoration: none;
+    
+}
+
+.nav-links ul{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    list-style: none;
+
+}
+
+
+ .nav-links ul a{
+    display: flex;
+    justify-content: space-between;
+    color: #212529;
+    font-size: 16px;
+
+} 
+
+
+.nav-links a{
+    font-size: 16px;
+    padding: 18px 15px;
+    font-weight: 400;
+    font-family: "Inter",  sans-serif;
+}
+
+.nav-links a:hover{
+    color: #0d83fd;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header .btn-started{
+    font-size: 14px;
+    padding: 10px 25px; 
+    margin: 0 0 0 30px; 
+    border-radius: 50px;
+    transition: 0.3s;
+    background-color: #0d83fd;
+    color: #ffffff;
+}
+
+header .btn-started:hover{
+    background-color: #4d9df3;
+    color: #ffffff;
+}
+
+/* Hero */
+.hero-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-top: 3%;
+    
+}
+
+.company-badge{
+    display: inline-flex;
+    align-items: center;
+     margin: 3rem 0 1.5rem 0; 
+    color: #0d83fd;
+    font-weight: 500;
+    border-radius: 50px;
+    background-color: #e0edfa;
+    padding: 10px 25px;
+    width: 60%;
+    
+}
+.company-badge img{
+    margin-right: 10px;
+}
+
+.hero-container h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-family: "Nunito",  sans-serif;
+}
+
+.drkblue-bigtxt{
+    color: #2d465e;
+}
+.liteblue-bigtxt{
+    color: #0d83fd;
+}
+.random-txt{
+    margin-bottom: 1.5rem;
+    color: #212529;
+    font-size: 14px;
+    /* line-height: 1.5rem; */
+}
+
+.hero-buttons{
+    margin-top: 15%;
+}
+
+
+.btn-started-big{
+    border-radius: 50px;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 14px 24px;
+    font-size: 1rem;
+}
+
+.btn-started-big:hover{
+    background-color: #0760c0;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+ .hero-buttons .btn-video{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    color: #2d465e;
+    margin-left: 40px;
+ }
+ 
+.hero-container .hero-img img{
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 10%;
+}
+
+.hero .customers-badge .avatar{
+    width: 35px;
+    height: 35px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-left: -8px;
+}
+
+.hero .customers-badge{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    background-color: #ffffff; 
+    padding: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 300px;
+    animation: float-badge 3s ease-in-out infinite;
+    will-change: transform;
+}
+
+.hero .customers-badge .customer-avatars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+   .hero .customers-badge .avatar span{
+    background-color: #0d83fd;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+  } 
+
+  .hero .customers-badge p{
+    font-size: 0.875rem;
+    margin-bottom: 0;
+    margin-top: 2;
+    color: #92979b;
+  }
+
+  .hero .stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #ffffff; 
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin: 5rem;
+    height: 30vh;
+  }
+
+  .stat-item{
+    display: inline-flex;
+    gap: 1rem;
+  }
+
+  .stats .stat-content h4{
+    font-size: 18px;
+    font-weight: 500;
+    color: #303438;
+    font-family: "Nunito",  sans-serif;
+    line-height: 1.5rem;
+  }
+
+  .stat-content p{
+    font-family: 10px;
+  }
+
+  .stats .stat-icon{
+    border-radius: 50px;
+    background-color: #d9e9fa;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .stats .stat-icon:hover{
+    color: #fff;
+    background-color: #99c3f0;
+    transition: 0.3s;
+  }
+
+
+
+
