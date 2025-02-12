@@ -30,7 +30,7 @@ header .container{
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
      padding-right: 20px;
     padding-left: 20px;
-    max-width: 1140px;
+    max-width: 1140px; 
     margin-left: 50px;
     margin-right: 10px;
      padding: 3px 5px 3px 15px;  
@@ -89,9 +89,10 @@ a{
 }
 
 header .btn-started{
+    display: inline-block;
     font-size: 14px;
     padding: 10px 25px; 
-    margin: 0 0 0 30px; 
+    margin: 0 40px 0 30px; 
     border-radius: 50px;
     transition: 0.3s;
     background-color: #0d83fd;
@@ -101,6 +102,54 @@ header .btn-started{
 header .btn-started:hover{
     background-color: #4d9df3;
     color: #ffffff;
+}
+
+.hamburger-menu{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #303438;
+}
+
+@media screen and (min-width:768px){
+    .hamburger-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+    /* body{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    } */
+   header .container{
+    width: 57%;
+    margin: 5px;
+    padding: 8px 5px 8px 18px;
+   } 
+
+   header .logo{
+    font-size: 10px;
+   }
+
+   header .logo-title{
+    margin-top: 5px;
+   }
+
+   .nav-links ul{
+    display: none;
+   }
+
+   header .btn-started{
+    margin: 0 20px 0 40px;
+   }
 }
 
 /* Hero */
@@ -188,6 +237,30 @@ header .btn-started:hover{
     margin-top: 10%;
 }
 
+@media screen and (max-width:768px){
+    .company-badge{
+        width: 100%;
+        padding: 10px 25px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-left: -30px;
+    }
+
+
+    .hero-container h1{
+        font-size: 2rem;
+    }
+
+
+    .hero-container{
+        display: inline-block;
+    }
+
+
+}
+
 .hero .customers-badge .avatar{
     width: 35px;
     height: 35px;
@@ -205,8 +278,16 @@ header .btn-started:hover{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     max-width: 300px;
-    animation: float-badge 3s ease-in-out infinite;
-    will-change: transform;
+    /* animation: float-badge 3s ease-in-out infinite;
+    will-change: transform; */
+}
+
+@media screen and (max-width:768px){
+    .hero .customers-badge{
+        /* display: none;     */
+    position: relative;
+    margin-top: 30px;
+    }
 }
 
 .hero .customers-badge .customer-avatars {
@@ -277,6 +358,12 @@ header .btn-started:hover{
     color: #fff;
     background-color: #99c3f0;
     transition: 0.3s;
+  }
+
+  @media screen and (max-width:768px){
+    .stats{
+        display: none;
+    }
   }
 
 
